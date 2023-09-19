@@ -45,11 +45,10 @@ TBD...
 ## [Installation](#table-of-contents)
 
 * Server/API
-
-```
-    1) npm run buildServer
-    2) npm run startServer
-```
+  ```
+      1) npm run buildServer
+      2) npm run startServer
+  ```
 <br>
 
 * Client
