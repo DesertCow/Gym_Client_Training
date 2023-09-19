@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Vegan Liftz Training App</h1>
  <p align="center">
-  <img src="./Dev_Docs/Art/Logo_Veganliftz_Green.png" width="350" height="250" alt="Demo 1")
+  <img src="./Dev_Docs/Art/Logo_Veganliftz_Green.png" width="350" height="150" alt="Vegan Liftz Logo Green")
 </p>
 
 <br>
