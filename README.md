@@ -18,10 +18,10 @@
 * [Goal](#description)
 * [Features](#features)
 * [Installation](#installation)
-* [Wireframe](#wireframe)
 * [Software Stack](#software-stack)
 * [Hardware Stack](#hardware-stack)
-* [Demo](#demo)
+* [Wireframe](#wireframe)
+<!-- * [Demo](#demo) -->
 
 
 
@@ -59,15 +59,6 @@ TBD...
 <br>
 <br>
 
-## [Wireframe](#table-of-contents)
-
- <p align="center">
-  <img src="./Dev_Docs/Wireframes/Home_Page.png" height="300" alt="Demo 1"/img>
-  <p align="center"><strong>Home Page</strong></p>
-</p>
-
-<br>
-<br>
 
 ## [Software Stack](#table-of-contents)
 
@@ -159,20 +150,63 @@ TBD...
 <br>
 <br>
 
-## [Demo](#table-of-contents)
+## [Wireframes](#table-of-contents)
 
 <div align="center">
-<h2>Client Demo</h2>
+<h2>Login Page</h2>
 <div/>
  <p align="center">
-  <img src="./Dev_Docs/Demo1.gif" alt="Demo 1"/img>
+  <img src="./Dev_Docs/Wireframes/Login_Page.png" width="850" alt="Demo 1"/img>
 </p>
 
-<div align="center">
-<h2>Admin Demo</h2>
+<br>
+<br>
+
+<div align="center">  
+  <h2>Home Page</h2>
 <div/>
- <p align="center">
-  <img  src="./Dev_Docs/Demo2.gif" alt="Demo 2"/img>
+<p align="center">
+  <img src="./Dev_Docs/Wireframes/Home_Page.png" width="850" alt="Demo 1"/img>
+</p>
+
+<br>
+<br>
+
+<div align="center">
+  <h2>Calendar</h2>
+<div/>
+<p align="center">
+  <img src="./Dev_Docs/Wireframes/Calendar.png" width="850" alt="Demo 1"/img>
+</p>
+
+<br>
+<br>
+
+<div align="center">
+  <h2>Trainer Schedule</h2>
+<div/>
+<p align="center">
+  <img src="./Dev_Docs/Wireframes/Trainer_Schedule.png" width="850" alt="Demo 1"/img>
+</p>
+
+<br>
+<br>
+
+<div align="center">
+  <h2>Billing</h2>
+<div/>
+<p align="center">
+  <img src="./Dev_Docs/Wireframes/Billing.png" width="850" alt="Demo 1"/img>
+</p>
+
+<br>
+<br>
+
+<div align="center">
+  <h2>User Settings</h2>
+<div/>
+<p align="center">
+  <img src="./Dev_Docs/Wireframes/User_Settings.png"  width="850" alt="Demo 1"/img>
 </p>
 
 <br>
