@@ -1,0 +1,50 @@
+/* 
+________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___        
+ _____/\\\////////____/\\\/////////\\\___/\\\/////////\\\_       
+  ___/\\\/____________\//\\\______\///___\//\\\______\///__      
+   __/\\\_______________\////\\\___________\////\\\_________     
+    _\/\\\__________________\////\\\___________\////\\\______    
+     _\//\\\____________________\////\\\___________\////\\\___   
+      __\///\\\___________/\\\______\//\\\___/\\\______\//\\\__  
+       ____\////\\\\\\\\\_\///\\\\\\\\\\\/___\///\\\\\\\\\\\/___ 
+        _______\/////////____\///////////_______\///////////____
+
+*/
+
+
+/*? ============= Font Import ============= */
+
+/* @font-face {
+  font-family: "Catamaran-Bold";
+  src: local("Catamaran-Bold"),
+    url("./fonts/Catamaran-Bold.ttf") format("truetype");
+} */
+
+/* @font-face {
+  font-family: "Catamaran-ExtraBold";
+  src: local("Catamaran-ExtraBold"),
+    url("./fonts/Catamaran-ExtraBold.ttf") format("truetype");
+} */
+
+/* @font-face {
+  font-family: "Catamaran-Regular";
+  src: local("Catamaran-Regular"),
+    url("./fonts/Catamaran-Regular.ttf") format("truetype");
+} */
+
+
+/*? ============= CSS Var ============= */
+
+:root {
+  /* --main-font: "NextStep-1"; */
+  /* --mainBG-color: #181818; */
+  --mainGreen-color: #0ca750;
+  /* --alt-color1: #0ba6d99a; */
+  /* --alt-color2: #d34846bb; */
+  /* --alt-color2b: #ed5735be; */
+  /* --alt-color3: #40807ac0; */
+}
+
+/*? ============= Main CSS ============= */
+
+
