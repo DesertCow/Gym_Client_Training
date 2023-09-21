@@ -1,0 +1,67 @@
+/* 
+________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___        
+ _____/\\\////////____/\\\/////////\\\___/\\\/////////\\\_       
+  ___/\\\/____________\//\\\______\///___\//\\\______\///__      
+   __/\\\_______________\////\\\___________\////\\\_________     
+    _\/\\\__________________\////\\\___________\////\\\______    
+     _\//\\\____________________\////\\\___________\////\\\___   
+      __\///\\\___________/\\\______\//\\\___/\\\______\//\\\__  
+       ____\////\\\\\\\\\_\///\\\\\\\\\\\/___\///\\\\\\\\\\\/___ 
+        _______\/////////____\///////////_______\///////////____
+
+*/
+
+
+/*? ============= Login Box ============= */
+
+.loginLogo {
+   height: 150px;
+
+}
+
+.loginTopBox {
+   margin-top: 250px;
+   background-color: white;
+   /* margin-bottom: 20%; */
+   max-width: 400px;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+
+.emailInputBox{
+   width: 300px;
+   font-size: 20px;
+}
+
+.passwordInputBox{
+   width: 300px;
+   font-size: 20px;
+}
+
+.footerLogin {
+   background-color: rgb(175, 175, 175);
+   border-radius: 0px 0px 15px 15px;
+   -webkit-border-radius: 0px 0px 15px 15px;
+   -moz-border-radius: 0px 0px 15px 15px;
+   -ms-border-radius: 0px 0px 15px 15px;
+   -o-border-radius: 0px 0px 15px 15px;
+}
+
+.loginbtns {
+   width: 100px;
+   background-color: #7AF6B0;
+
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+
+.loginbtns:hover {
+  background-color: #c3c3c3b5;
+  color: black;
+}
