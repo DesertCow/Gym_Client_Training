@@ -19,8 +19,6 @@ const LoginBox = () => {
 
     navigate("/home");
     window.scrollTo(0, 0);
-
-
   }
 
   const passwordReset = async (event) => {
@@ -41,7 +39,7 @@ const LoginBox = () => {
 
    <div className="row d-flex w-100 loginTopBox">
 
-        <div className="col-12 mt-3 text-center">
+        <div className="col-12 mt-3 mb-5 text-center">
           <img src={require("../../img/Solo_Logo+White.png")}
             className="loginLogo"
             alt="VeganLiftz Logo" />
@@ -82,15 +80,15 @@ const LoginBox = () => {
                 </p>
               </div>
             </div>
-            <div className="text-center my-5 row">
-              <button className="loginbtns p-3 loginBTN" type="submit">Log in</button>
-              <button className="loginbtns mt-4 p-3 registerBTN" type="button" onClick={(event) => newUserRegister(event)}>New Member Registration</button>
+            <div className="d-flex row text-center my-5 px-5">
+              <button className="loginbtns p-3" type="submit">Log in</button>
+              <button className="loginbtns mt-4 p-3" type="button" onClick={(event) => newUserRegister(event)}>New Member Registration</button>
             </div>
           </form>
         </div >
 
       <footer className="d-flex justify-content-center footerLogin pb-1">
-        <div className="d-flex align-items-left pt-2 px-2 pb-1 justify-content-around contactFooter">
+        <div className="d-flex align-items-left pt-2 px-2 pb-1 justify-content-around">
           <div className="d-flex flex-column">
             <a href="https://github.com/DesertCow">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#000000" className="bi bi-github" viewBox="0 0 16 16">

@@ -42,26 +42,81 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .footerLogin {
-   background-color: rgb(175, 175, 175);
-   border-radius: 0px 0px 15px 15px;
-   -webkit-border-radius: 0px 0px 15px 15px;
-   -moz-border-radius: 0px 0px 15px 15px;
-   -ms-border-radius: 0px 0px 15px 15px;
-   -o-border-radius: 0px 0px 15px 15px;
+        opacity: 93%;
+        font-family: "LEMONMILK-Regular";
+        font-size: 14px;
+        font-weight: 600;
+        background-color: rgb(175, 175, 175);
+        border-radius: 0px 0px 15px 15px;
+        -webkit-border-radius: 0px 0px 15px 15px;
+        -moz-border-radius: 0px 0px 15px 15px;
+        -ms-border-radius: 0px 0px 15px 15px;
+        -o-border-radius: 0px 0px 15px 15px;
 }
 
 .loginbtns {
-   width: 100px;
-   background-color: #7AF6B0;
-
-   border-radius: 15px;
-   -webkit-border-radius: 15px;
-   -moz-border-radius: 15px;
-   -ms-border-radius: 15px;
-   -o-border-radius: 15px;
+	background-color: #7AF6B0;
+        font-size: 15px;
+        font-family: "LEMONMILK-Regular";
+	font-weight: 400;
+	border: none;
+	width: 300px;
+	/* background-color: rgba(0, 0, 0, 0.902); */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 .loginbtns:hover {
-  background-color: #c3c3c3b5;
-  color: black;
+  background-color: #033117;
+  color: rgb(255, 255, 255);
 }
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
