@@ -1,0 +1,122 @@
+/* 
+________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___        
+ _____/\\\////////____/\\\/////////\\\___/\\\/////////\\\_       
+  ___/\\\/____________\//\\\______\///___\//\\\______\///__      
+   __/\\\_______________\////\\\___________\////\\\_________     
+    _\/\\\__________________\////\\\___________\////\\\______    
+     _\//\\\____________________\////\\\___________\////\\\___   
+      __\///\\\___________/\\\______\//\\\___/\\\______\//\\\__  
+       ____\////\\\\\\\\\_\///\\\\\\\\\\\/___\///\\\\\\\\\\\/___ 
+        _______\/////////____\///////////_______\///////////____
+
+*/
+
+
+/*? ============= Login Box ============= */
+
+.loginLogo {
+   height: 150px;
+
+}
+
+.loginTopBox {
+   margin-top: 250px;
+   background-color: white;
+   /* margin-bottom: 20%; */
+   max-width: 400px;
+   border-radius: 15px;
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   -ms-border-radius: 15px;
+   -o-border-radius: 15px;
+}
+
+.emailInputBox{
+   width: 300px;
+   font-size: 20px;
+}
+
+.passwordInputBox{
+   width: 300px;
+   font-size: 20px;
+}
+
+.footerLogin {
+        opacity: 93%;
+        font-family: "LEMONMILK-Regular";
+        font-size: 14px;
+        font-weight: 600;
+        background-color: rgb(175, 175, 175);
+        border-radius: 0px 0px 15px 15px;
+        -webkit-border-radius: 0px 0px 15px 15px;
+        -moz-border-radius: 0px 0px 15px 15px;
+        -ms-border-radius: 0px 0px 15px 15px;
+        -o-border-radius: 0px 0px 15px 15px;
+}
+
+.loginbtns {
+	background-color: #7AF6B0;
+        font-size: 15px;
+        font-family: "LEMONMILK-Regular";
+	font-weight: 400;
+	border: none;
+	width: 300px;
+	/* background-color: rgba(0, 0, 0, 0.902); */
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.loginbtns:hover {
+  background-color: #033117;
+  color: rgb(255, 255, 255);
+}
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+
+
+
+
+/*? ============= ???????????? ============= */
+
+
+
+
+
+

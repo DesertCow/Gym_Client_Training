@@ -4,6 +4,7 @@ import App from './App';
 import 'bootstrap';
 import "./css/main_style.css";
 import "./css/reset.css";
+import "./css/component.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createRoot } from 'react-dom/client';
@@ -20,7 +21,7 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 root.render(
-  <div className="">
+  <div className="topLevelPage">
     {/* <ApolloProvider client={client}> */}
       {/* <LocalizationProvider dateAdapter={AdapterDayjs}> */}
         <App />
