@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import LoginBox from "../components/LoginBox";
 
 
-const Login = (props) => {
+const Login = () => {
 
 
   return (

@@ -76,19 +76,32 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 
 
-/*? ============= ???????????? ============= */
+/*? ============= Header ============= */
+
+.main_header{
+        background-color: #0ca750;
+}
 
 
 
 
 
 
+/*? ============= Sidebar ============= */
 
 
-/*? ============= ???????????? ============= */
+.sideBarMain {
+        max-width: 225px;
 
+        /*! WORK-AROUND Make 100% */
+        min-height: 785px;
+        background-color: #0ca750;
+}
 
-
+.sideBarLink {
+        font-family: var(--main-font-bold);
+        font-size: 30px;
+}
 
 
 

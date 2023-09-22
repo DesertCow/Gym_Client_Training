@@ -42,7 +42,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= CSS Var ============= */
 
 :root {
-  /* --main-font: "NextStep-1"; */
+  --main-font-bold: "LEMONMILK-Bold";
+  --main-font-regular: "LEMONMILK-Regular";
   /* --mainBG-color: #181818; */
   --mainGreen-color: #0ca750;
   /* --alt-color1: #0ba6d99a; */
@@ -55,10 +56,12 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
   /* background-color: #0ca750; */
 }
 
-/*? ============= Main CSS ============= */
+/*? ============= Home Page CSS ============= */
 
-
-
+.welcomeText{
+  font-family: var(--main-font-bold);
+  font-size: 40px;
+}
 
 /*? ============= Login Page CSS ============= */
 
