@@ -103,6 +103,12 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
         font-size: 30px;
 }
 
+.sidebar_footer_logo {
+        /* max-width: 20px; */
+        height: 40px;
+        width: 70px !important;
+}
+
 
 
 
