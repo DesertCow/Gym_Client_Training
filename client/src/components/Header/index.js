@@ -29,7 +29,7 @@ const Header = () => {
 
       <div className="text-center">
         <img src={require("../../img/Logo_Veganliftz_White.png")}
-          className="logo my-3"
+          className="headerLogo my-3"
           onClick={() => HeaderLogoClicked(event)}
           alt="Vegan Liftz Logo White" />
       </div>

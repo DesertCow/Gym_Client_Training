@@ -1,13 +1,12 @@
 
 
-
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";
 
 
 
 
-function Calendar() {
+function UserSettings() {
 
   return (
 
@@ -19,7 +18,7 @@ function Calendar() {
 
         <SideBar />
 
-        <h1 className="col text-center mt-5 welcomeText"> Calendar</h1>
+        <h1 className="col text-center mt-5 welcomeText"> User Settings</h1>
 
       </div>
       
@@ -34,4 +33,4 @@ function Calendar() {
   )
 }
 
-export default Calendar;
+export default UserSettings;

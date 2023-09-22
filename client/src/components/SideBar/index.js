@@ -20,9 +20,9 @@ const SideBar = () => {
 
     // <h1 className="text-center mt-5">Side Bar</h1>
 
-    <div className="col sideBarMain">
+    <div className="d-flex flex-column sideBarMain">
 
-      <div className="row text-center">
+      <div className="d-flex flex-column text-center">
 
         <p className="sideBarLink mt-4"  onClick={() => navigate("/home")}>Home</p>
 
@@ -32,7 +32,7 @@ const SideBar = () => {
 
         <p className="sideBarLink mt-4"  onClick={() => navigate("/billing")}>Billing</p>
 
-        <div className="row mt-5 justify-content-around">
+        <div className="d-flex flex-row mb-2 justify-content-around sidebarBottomIcons">
 
 
           <img src={require("../../img/icons/logout_icon.png")}
@@ -42,7 +42,6 @@ const SideBar = () => {
           <img src={require("../../img/icons/settings_icon.png")}
             className="sidebar_footer_logo"
             onClick={() => navigate("/userSettings")}
-            height="50px"
             alt="Settings Icon" />
 
         </div>

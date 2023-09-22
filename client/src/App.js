@@ -18,6 +18,8 @@ import Calendar from './pages/Calendar';
 import TrainerSchedule from './pages/TrainerSchedule';
 import Billing from './pages/Billing';
 
+import UserSettings from './pages/UserSettings';
+
 import Register from './pages/Register'
 import PasswordReset from './pages/PasswordReset'
 
@@ -35,17 +37,19 @@ export default function App() {
     // <h1 className="text-center mt-5"> VeganLiftz App [From App.js]</h1>
 
     <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
+      <Routes>        
+        {/*//? ======= Entry Page ======= */}
+        <Route path="/" element={<Login />} />        
+        {/*//? ======= Register/Reset Pages ======= */}
+        <Route path="/register" element={<Register />} />
+        <Route path="/passwordReset" element={<PasswordReset />} />
+        {/*//? ======= Main Pages ======= */}
         <Route path="/home" element={<Home />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/trainerSchedule" element={<TrainerSchedule />} />
+        {/*//? ======= Settings Pages ======= */}
         <Route path="/billing" element={<Billing />} />
-        {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/register" element={<Register />} />
-        <Route path="/passwordReset" element={<PasswordReset />} />
-
-        {/* <Route path="/passwordReset" element={<PasswordReset />} /> */}
+        <Route path="/userSettings" element={<UserSettings />} />
       </Routes>
     </Router>
   );

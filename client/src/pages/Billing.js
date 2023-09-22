@@ -14,7 +14,7 @@ function Billing() {
 
       <Header />
 
-      <div className="d-flex col mx-0 py-0">
+      <div className="d-flex flex-row">
 
         <SideBar />
 
