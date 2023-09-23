@@ -36,11 +36,11 @@ const SideBar = () => {
 
 
           <img src={require("../../img/icons/logout_icon.png")}
-            className=" sidebar_footer_logo"
+            className=" sidebar_footer_logo_logout"
             onClick={() => logOutConfirm(event)}
             alt="Settings Icon" />
           <img src={require("../../img/icons/settings_icon.png")}
-            className="sidebar_footer_logo"
+            className="sidebar_footer_logo_settings"
             onClick={() => navigate("/userSettings")}
             alt="Settings Icon" />
 

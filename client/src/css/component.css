@@ -99,9 +99,11 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .sideBarMain {
         max-width: var(--sidebar-width);
-        /*! WORK-AROUND Make 100% */
-        min-height: 785px;
         background-color: #0ca750;
+        
+        /*! WORKAROUND FIX to 100%  */
+        min-height: 84.8vh;
+        /*! ======================  */
 }
 
 .sideBarLink {
@@ -121,10 +123,14 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
         -o-border-radius: 15px;
 }
 
-.sidebar_footer_logo {
-        /* max-width: 20px; */
+.sidebar_footer_logo_logout {
         height: 50px;
-        width: 60px !important;
+        width: 50px !important;
+}
+
+.sidebar_footer_logo_settings{
+        height: 50px;
+        width: 55px !important;
 }
 
 .sidebarBottomIcons {
