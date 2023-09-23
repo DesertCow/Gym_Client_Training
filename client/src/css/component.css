@@ -15,7 +15,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= Login Box ============= */
 
 .loginLogo {
-   height: 150px;
+        height: 150px;
 
 }
 
@@ -70,25 +70,85 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .loginbtns:hover {
-  background-color: #033117;
-  color: rgb(255, 255, 255);
+        background-color: #033117;
+        color: rgb(255, 255, 255);
 }
 
 
 
-/*? ============= ???????????? ============= */
+/*? ============= Header ============= */
+
+.main_header{
+        background-color: #0ca750;
+}
+
+.headerLogo {
+        margin-left: 10%;
+}
 
 
 
 
 
 
+/*? ============= Sidebar ============= */
 
+:root {
+  --sidebar-width: 225px;
+}
 
-/*? ============= ???????????? ============= */
+.sideBarMain {
+        max-width: var(--sidebar-width);
+        background-color: #0ca750;
+        
+        /*! WORKAROUND FIX to 100%  */
+        min-height: 84.8vh;
+        /*! ======================  */
+}
 
+.sideBarLink {
+        font-family: var(--main-font-bold);
+        font-size: 30px;
+        
+}
 
+.sideBarLink:hover {
+        background-color: #033117;
+        color: rgb(255, 255, 255);
+        /*padding: 0px 50px 0px 50px;*/
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
 
+.sidebar_footer_logo_logout {
+        height: 50px;
+        width: 50px !important;
+}
+
+.sidebar_footer_logo_settings{
+        height: 50px;
+        width: 55px !important;
+}
+
+.sidebarBottomIcons {
+        position:absolute;
+        bottom:0;
+        width: var(--sidebar-width);
+}
+
+.sidebar_footer_logo:hover {
+        background-color: #38F188;
+        color: rgb(255, 255, 255);
+        /*padding: 0px 50px 0px 50px;*/
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;     
+}
 
 
 

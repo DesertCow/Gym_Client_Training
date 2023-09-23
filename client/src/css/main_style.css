@@ -42,7 +42,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= CSS Var ============= */
 
 :root {
-  /* --main-font: "NextStep-1"; */
+  --main-font-bold: "LEMONMILK-Bold";
+  --main-font-regular: "LEMONMILK-Regular";
   /* --mainBG-color: #181818; */
   --mainGreen-color: #0ca750;
   /* --alt-color1: #0ba6d99a; */
@@ -55,18 +56,39 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
   /* background-color: #0ca750; */
 }
 
-/*? ============= Main CSS ============= */
+body > #root > div {
+  height: 100vh;
+}
 
+/*? ============= Home Page CSS ============= */
 
+.welcomeText {
+  font-family: var(--main-font-bold);
+  font-size: 40px;
+}
 
+.workoutBox {
+  border-style: solid;
+  border-color: black;
+  border-width: 5px;
+  width: 550px;
+  height: 500px;
+
+}
+
+.todaysBoxTitle {
+  font-size: 25px;
+  font-family: var(--main-font-bold);
+}
+
+.homePage {
+  min-height: 100vh;
+}
 
 /*? ============= Login Page CSS ============= */
 
 .loginPage {
-
-  /*! Make 100% Below is work around... */
-  min-height: 927px;
-
+  min-height: 100vh;
   background-color: #0ca750;
 }
 

@@ -150,7 +150,7 @@ TBD...
 <br>
 <br>
 
-## [Wireframes](#table-of-contents)
+## [Wireframe](#table-of-contents)
 
 <div align="center">
 <h2>Login Page</h2>
