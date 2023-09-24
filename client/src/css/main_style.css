@@ -45,7 +45,9 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
   --main-font-bold: "LEMONMILK-Bold";
   --main-font-regular: "LEMONMILK-Regular";
   /* --mainBG-color: #181818; */
-  --mainGreen-color: #0ca750;
+  --main-color-green: #0ca750;
+  --main-color-light_green: #38F188;
+  --main-color-dark_green: #033117;
   /* --alt-color1: #0ba6d99a; */
   /* --alt-color2: #d34846bb; */
   /* --alt-color2b: #ed5735be; */
@@ -54,9 +56,9 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 /*? ============= Global CSS ============= */
 
-.topLevelPage {
-  /* background-color: #0ca750; */
-}
+/* .topLevelPage {
+  background-color: #0ca750;
+} */
 
 body > #root > div {
   height: 100vh;

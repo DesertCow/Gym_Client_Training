@@ -79,7 +79,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= Header ============= */
 
 .main_header{
-        background-color: #0ca750;
+        background-color: var(--main-color-green);
 }
 
 .headerLogo {
@@ -99,7 +99,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .sideBarMain {
         max-width: var(--sidebar-width);
-        background-color: #0ca750;
+        background-color: var(--main-color-green);
         
         /*! WORKAROUND FIX to 100%  */
         min-height: 84.8vh;
