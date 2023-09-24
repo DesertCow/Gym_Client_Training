@@ -45,19 +45,28 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
   --main-font-bold: "LEMONMILK-Bold";
   --main-font-regular: "LEMONMILK-Regular";
   /* --mainBG-color: #181818; */
-  --mainGreen-color: #0ca750;
+  --main-color-green: #0ca750;
+  --main-color-light_green: #38F188;
+  --main-color-dark_green: #033117;
   /* --alt-color1: #0ba6d99a; */
   /* --alt-color2: #d34846bb; */
   /* --alt-color2b: #ed5735be; */
   /* --alt-color3: #40807ac0; */
 }
 
-.topLevelPage {
-  /* background-color: #0ca750; */
-}
+/*? ============= Global CSS ============= */
+
+/* .topLevelPage {
+  background-color: #0ca750;
+} */
 
 body > #root > div {
   height: 100vh;
+}
+
+.applyMainFont {
+  font-family: var(--main-font-bold);
+  font-size: 20px;
 }
 
 /*? ============= Home Page CSS ============= */
@@ -93,5 +102,57 @@ body > #root > div {
 }
 
 
+/*? ============= User Settings CSS ============= */
+
+.avatarIcon {
+  width: 200px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.editProfileText{
+  font-family: var(--main-font-regular);
+  font-size: 18px;
+}
+
+.editProfileUserName{
+  font-family: var(--main-font-bold);
+  font-size: 25px;
+}
+
+.uploadBox {
+  /* background-color: #1519d2; */
+  border-style: solid;
+  border-color: #c3c3c3b5;
+  border-width: 5px;
+}
+
+.userProfileUpdateBtn {
+  font-family: var(--main-font-bold);
+  font-size: 18px;
+  width: 250px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.902);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.nameInput {
+  width: 250px;
+}
+
+.emailInput {
+  width: 450px !important;
+}
+
+.passwordInput {
+  width: 300px !important;
+}
 
 

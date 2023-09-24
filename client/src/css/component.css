@@ -46,7 +46,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
         font-family: "LEMONMILK-Regular";
         font-size: 14px;
         font-weight: 600;
-        background-color: rgb(175, 175, 175);
+        background-color: rgba(175, 175, 175, 0.566);
         border-radius: 0px 0px 15px 15px;
         -webkit-border-radius: 0px 0px 15px 15px;
         -moz-border-radius: 0px 0px 15px 15px;
@@ -79,7 +79,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= Header ============= */
 
 .main_header{
-        background-color: #0ca750;
+        background-color: var(--main-color-green);
 }
 
 .headerLogo {
@@ -99,7 +99,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .sideBarMain {
         max-width: var(--sidebar-width);
-        background-color: #0ca750;
+        background-color: var(--main-color-green);
         
         /*! WORKAROUND FIX to 100%  */
         min-height: 84.8vh;
