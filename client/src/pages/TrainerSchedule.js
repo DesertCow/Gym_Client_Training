@@ -1,4 +1,5 @@
-
+import React from "react";
+import Calendar from "@ericz1803/react-google-calendar";
 
 import SideBar from "../components/SideBar";
 import Header from "../components/Header";
@@ -7,6 +8,21 @@ import Header from "../components/Header";
 
 
 function TrainerSchedule() {
+
+  //! 💀💀💀💀 EXPOSED API Keys 💀💀💀💀
+  const calenderID = "46d0b7242503e7df5b2f2d2748186f4b71019055df1e0a378a44b143da92e93f@group.calendar.google.com"
+  const API_KEY = "AIzaSyCbWMQa_jgNRxsSqARCVPy0nsmzrvFY-Mg";
+  //! 💀💀💀💀 EXPOSED API Keys 💀💀💀💀
+
+
+  let calendars = [
+  { calendarId: calenderID },
+  // {
+  //   calendarId: "YOUR_CALENDAR_ID_2",
+  //   color: "#B241D1", //optional, specify color of calendar 2 events
+  // },
+];
+
 
   const currentTrainerSet = async (event) => {
     event.preventDefault();
@@ -54,9 +70,10 @@ function TrainerSchedule() {
 
             </div>
 
-            <div className="d-flex justify-content-center align-items-center trainerCalenderBox">
+            <div className="d-flex justify-content-center align-items-center trainerCalenderBox my-5">
             
-              <h1>** Insert Calender Here **</h1>
+              {/* <h1>** Insert Calender Here **</h1> */}
+              <Calendar apiKey={API_KEY} calendars={calendars} showFooter="false"/>
 
             </div>
 
