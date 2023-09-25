@@ -213,3 +213,7 @@ body > #root > div {
   font-size: 22px;
   /* font-style: var(--main-font-bold); */
 }
+
+.hiddenText {
+  display: none;
+}
