@@ -161,11 +161,11 @@ body > #root > div {
 
 .creditCardBox {
   background-color: var(--main-color-light_green);
-  padding: 50px 50px 25px 50px;
+  padding: 25px 25px 25px 25px;
   border-color: rgb(210, 210, 210);
   border-width: 10px;
   border-style: solid;
-  margin: 10% 20% 0px 20%;
+  margin: 5% 20% 0px 20%;
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
