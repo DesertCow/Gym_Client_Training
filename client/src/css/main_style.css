@@ -156,3 +156,47 @@ body > #root > div {
 }
 
 
+
+/*? ============= Billing CSS ============= */
+
+.creditCardBox {
+  background-color: var(--main-color-light_green);
+  padding: 25px 25px 25px 25px;
+  border-color: rgb(210, 210, 210);
+  border-width: 10px;
+  border-style: solid;
+  width: 350px;
+  margin: 3% 20% 0px 20%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.CC-Name{
+  align-items: flex-start;
+  justify-content: left;
+  width: 250px !important;
+
+}
+
+.CC-Number {
+  width: 250px !important;
+}
+
+.CC-ExpireDateMonth {
+  width: 55px !important;
+}
+
+.CC-ExpireDateYear {
+  width: 70px !important;
+}
+
+.CC-CVC {
+  width: 55px !important;
+}
+
+.CC-ZipCode {
+  width: 90px !important;
+}
