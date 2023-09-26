@@ -200,3 +200,20 @@ body > #root > div {
 .CC-ZipCode {
   width: 90px !important;
 }
+
+/*? ============= Trainer Schedule CSS ============= */
+
+.trainerCalenderBox {
+
+  width: 1000px;
+  height: 700px;
+}
+
+.trainerSelectDropdown {
+  font-size: 22px;
+  /* font-style: var(--main-font-bold); */
+}
+
+.hiddenText {
+  display: none;
+}

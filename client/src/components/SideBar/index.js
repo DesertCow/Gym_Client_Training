@@ -26,7 +26,7 @@ const SideBar = () => {
 
         <p className="sideBarLink mt-4"  onClick={() => navigate("/home")}>Home</p>
 
-        <p className="sideBarLink mt-4"  onClick={() => navigate("/calendar")}>Calendar</p>
+        <p className="sideBarLink mt-4"  onClick={() => navigate("/calendar")}>Training Calendar</p>
 
         <p className="sideBarLink mt-4"  onClick={() => navigate("/trainerSchedule")}>Trainer Schedule</p>
 
