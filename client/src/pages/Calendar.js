@@ -11,18 +11,18 @@ import Header from "../components/Header";
 function TrainingCalendar() {
 
   const localizer = momentLocalizer(moment)
-  const [selected, setSelected] = useState();
+  // const [selected, setSelected] = useState();
 
   const handleSelected = (event) => {
-    setSelected(event);
+    // setSelected(event);
     // console.info(event.title + " : " + event);
-    console.log(event.title + ": " + event.desc);
-    console.log(event.title + ": " + JSON.stringify(event));
+    console.log(event.title + " (" + event.eventID + ") " + ": " + event.desc);
+    // console.log(event.title + " (" + event.eventID + ") " + ": " + JSON.stringify(event));
     // console.log('[handleSelected - event]', event);
   };
 
-  console.log(moment().toDate())
-  console.log(moment().format("MMM Do YY"))
+  // console.log(moment().toDate())
+  // console.log(moment().format("MMM Do YY"))
 
     let state = {
       events: [
@@ -35,31 +35,36 @@ function TrainingCalendar() {
           // end: moment()
           //   .add(0, "days")
           //   .toDate(),
-          desc: 'Workout Information'
+          desc: 'Workout Information',
+          eventID: "64b7e6298acc0966613ae6d1"
         },
         {
           title: "Daily Workout",
           start: new Date("2023-09-26T05:00:00.000"),
           end: new Date("2023-09-26T07:00:00.000"),
-          desc: 'Workout Information'
+          desc: 'Workout Information',
+          eventID: "64b7e6298acc0966613ae6d2"
         },
         {
           title: "Daily Workout",
           start: new Date("2023-09-27T05:00:00.000"),
           end: new Date("2023-09-27T07:00:00.000"),
-          desc: 'Workout Information'
+          desc: 'Workout Information',
+          eventID: "64b7e6298acc0966613ae6d3"
         },
         {
           title: "Daily Workout",
           start: new Date("2023-09-28T05:00:00.000"),
           end: new Date("2023-09-28T07:00:00.000"),
-          desc: 'Workout Information'
+          desc: 'Workout Information',
+          eventID: "64b7e6298acc0966613ae6d4"
         },
         {
           title: "Daily Workout",
           start: new Date("2023-09-29T05:00:00.000"),
           end: new Date("2023-09-29T07:00:00.000"),
-          desc: 'Workout Information'
+          desc: 'Workout Information',
+          eventID: "64b7e6298acc0966613ae6d5"
         },
       ]
     };
