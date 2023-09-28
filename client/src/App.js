@@ -31,6 +31,9 @@ export default function App() {
 
   require('./css/main_style.css')
   require('./css/reset.css')
+  require('../node_modules/react-big-calendar/lib/css/react-big-calendar.css')
+  require('./css/calendar.css')
+  // require('./css/react-big-calendar.css.map)
 
   return (
 

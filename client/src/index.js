@@ -9,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 //* React Big Calender CSS Import *//
 import "../node_modules/react-big-calendar/lib/css/react-big-calendar.css"
+import "./css/calendar.css"
+// import "./css/react-big-calendar.css"
+// import "./css/react-big-calendar.css.map"
 
 import { createRoot } from 'react-dom/client';
 
