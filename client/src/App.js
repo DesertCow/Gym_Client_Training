@@ -14,7 +14,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 
 import Home from './pages/Home';
-import Calendar from './pages/Calendar';
+import TrainingCalendar from './pages/Calendar';
 import TrainerSchedule from './pages/TrainerSchedule';
 import Billing from './pages/Billing';
 
@@ -31,6 +31,9 @@ export default function App() {
 
   require('./css/main_style.css')
   require('./css/reset.css')
+  require('../node_modules/react-big-calendar/lib/css/react-big-calendar.css')
+  require('./css/calendar.css')
+  // require('./css/react-big-calendar.css.map)
 
   return (
 
@@ -45,7 +48,7 @@ export default function App() {
         <Route path="/passwordReset" element={<PasswordReset />} />
         {/*//? ======= Main Pages ======= */}
         <Route path="/home" element={<Home />} />
-        <Route path="/calendar" element={<Calendar />} />
+        <Route path="/calendar" element={<TrainingCalendar />} />
         <Route path="/trainerSchedule" element={<TrainerSchedule />} />
         {/*//? ======= Settings Pages ======= */}
         <Route path="/billing" element={<Billing />} />
