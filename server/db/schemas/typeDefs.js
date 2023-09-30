@@ -8,12 +8,13 @@ const { gql } = require("@apollo/server");
 const typeDefs = `#graphql
 
   type Query {
-    testQuery: String
+    getTrainerList: [Trainer]
   }
 
   type Mutation {
     createUser(userEmail: String!, password: String!, clubPassword: String!, memberFirstName: String!, memberLastName: String!): Auth
     login(userEmail: String!, password: String!): Auth
+    createTrainer(trainerEmail: String!, password: String!,calendarLink: String, trainerFirstName: String!, trainerLastName: String!): Trainer
   }
 
   type UserCreated {
@@ -35,6 +36,14 @@ const typeDefs = `#graphql
     loginToken: String
     memberFirstName: String
     memberLastName: String
+  }
+
+  type Trainer {
+    _id: ID
+    trainerEmail: String
+    calendarLink: String
+    trainerFirstName: String
+    trainerLastName: String
   }
   
 `;
