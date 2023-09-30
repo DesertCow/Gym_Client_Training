@@ -23,6 +23,7 @@ const cors = require("cors");
 var corsOptions = {
   // origin: 'https://boardclubapp-production.up.railway.app',
   origin: 'http://localhost:3001',
+  origin: '*',
   // origin: 'http://localhost:8081',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
@@ -117,7 +118,7 @@ async function serverStart() {
 //* ========== Main ===========
 
 // * Main Server Call
-seedServer();
+// seedServer();
 console.log("\n\x1b[34mStarting Server...\x1b[0m")
 serverStart();
 console.log("\x1b[32mServer Start Successful!\x1b[0m")
