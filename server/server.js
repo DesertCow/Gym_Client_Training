@@ -67,7 +67,7 @@ const server = new ApolloServer({
 //* ========= Apply Cors =========
 app.options('*', cors()) // include before other routes
 
-console.log("\n\x1b[34mServer Import Complete \nStarting Connections...\x1b")
+console.log("\n\x1b[32mServer Import Complete \n\x1b[33mNegotiating Database Connections...\x1b")
 
 //* Starts all backend servers and DB connections
 async function serverStart() {
@@ -98,11 +98,11 @@ async function serverStart() {
 
     console.log("\n\x1b[36m---       \x1b[33mServer Status\x1b[36m       ---")
     console.log("---------------------------------")
-    console.log('---\x1b[30m MongoDB Database [' + "\x1b[32mOnline\x1b[0m" + ']\x1b[36m ---')
+    console.log('---\x1b[37m MongoDB Database [' + "\x1b[32mOnline\x1b[0m" + ']\x1b[36m ---')
 
     // * Start GraphQL Server
     app.listen(graphQLport, () => {
-      console.log(`---\x1b[30m GraphQL API      [` + "\x1b[32mOnline\x1b[0m" + `] \x1b[36m---`);
+      console.log(`---\x1b[37m GraphQL API      [` + "\x1b[32mOnline\x1b[0m" + `] \x1b[36m---`);
       console.log("---------------------------------\x1b[30m\n")
       console.log(`\x1b[31mAPI Live:\x1b[0m http://192.168.25.22:${graphQLport}\n`);
 
@@ -114,9 +114,9 @@ async function serverStart() {
 //* ========== Main ===========
 
 // * Main Server Call
-console.log("\n\x1b[34mStart Server...\x1b[0m")
+console.log("\n\x1b[34mStarting Server...\x1b[0m")
 serverStart();
-console.log("\x1b[33mServer Start Complete!\x1b[0m")
+// console.log("\x1b[33mServer Start Complete!\x1b[0m")
 
 //* ========== EOM ===========
 
