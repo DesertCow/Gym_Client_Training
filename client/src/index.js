@@ -13,14 +13,17 @@ import "./css/calendar.css"
 // import "./css/react-big-calendar.css"
 // import "./css/react-big-calendar.css.map"
 
+//* Apollo Imports
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+
 import { createRoot } from 'react-dom/client';
 
 //? GraphQL Server URL
-// const client = new ApolloClient({
-//   uri: 'http://192.168.25.22:4001',
-//   // uri: 'https://boardclubapp-api.up.railway.app',
-//   cache: new InMemoryCache(),
-// });
+const client = new ApolloClient({
+  uri: 'http://192.168.25.22:4001',
+  // uri: 'https://boardclubapp-api.up.railway.app',
+  cache: new InMemoryCache(),
+});
 
 
 const rootElement = document.getElementById('root');
@@ -28,10 +31,10 @@ const root = createRoot(rootElement);
 
 root.render(
   <div className="topLevelPage">
-    {/* <ApolloProvider client={client}> */}
+    <ApolloProvider client={client}>
       {/* <LocalizationProvider dateAdapter={AdapterDayjs}> */}
         <App />
       {/* </LocalizationProvider> */}
-    {/* </ApolloProvider> */}
+    </ApolloProvider>
   </div>
 );
