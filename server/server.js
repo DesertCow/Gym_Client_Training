@@ -33,19 +33,19 @@ const graphQLport = process.env.GRAPH_QL_PORT || 4001;
 //* ========= DB Connections =========
 const db = require('./db/mongoConnection');
 
-//*! ========= DB Seed Function =========
-// const seedAll = require('./db/seeds/index');
+//* ========= DB Seed Function =========
+const seedAll = require('./db/seeds/index');
 
-// async function seedServer() {
+async function seedServer() {
 
-//   try {
-//     await seedAll();
-//     console.log('\n\x1b[42m----- SEEDING COMPLETE/VALID -----\x1b[0m\n');
-//   } catch (error) {
-//     console.log('\n\x1b[41m----- SEEDING FAILED! -----\x1b[0m\n');
-//     console.log(error);
-//   }
-// }
+  try {
+    await seedAll();
+    console.log('\n\x1b[42m----- SEEDING COMPLETE/VALID -----\x1b[0m\n');
+  } catch (error) {
+    console.log('\n\x1b[41m----- SEEDING FAILED! -----\x1b[0m\n');
+    console.log(error);
+  }
+}
 
 //* ========= DB Schema =========
 const { typeDefs, resolvers } = require('./db/schemas');
@@ -116,6 +116,7 @@ async function serverStart() {
 // * Main Server Call
 console.log("\n\x1b[34mStarting Server...\x1b[0m")
 serverStart();
+seedServer();
 // console.log("\x1b[33mServer Start Complete!\x1b[0m")
 
 //* ========== EOM ===========
