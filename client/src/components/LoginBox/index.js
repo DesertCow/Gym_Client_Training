@@ -1,11 +1,16 @@
 import { useNavigate } from "react-router-dom";
 
-
+import { LOGIN_M } from '../../utils/mutations'
+import { useMutation } from '@apollo/client';
 
 const LoginBox = () => {
 
   const navigate = useNavigate();
 
+  //* Load Login Mutation
+  const [login, { data }] = useMutation(LOGIN_M);
+
+  //* Login Button Handle
   const HandleLogin = async (event) => {
 
     event.preventDefault();
@@ -16,11 +21,44 @@ const LoginBox = () => {
     console.log("Email: " + loginForm.get("memberEmail"))
     console.log("Password: " + loginForm.get("password"))
 
+    //* Execute Login Mutation
+    const { data } = await login({
+      
+      variables: { 
+        userEmail: loginForm.get("memberEmail"),
+        password: loginForm.get("password"),
+      },
 
-    navigate("/home");
-    window.scrollTo(0, 0);
+    });
+
+    //* Handle Returned Login Token
+    if( data.login.token == "INVALID Password!" || data.login.token == "Email Not Found!") {
+
+      //* Bad Token Do Not Save
+      window.alert("LOGIN Failed: Invalid Email/Password");
+      console.log(data.login.token)
+      window.location.reload(false);
+
+    }
+    else {
+
+      //* Create JWT Token
+      // Auth.login(JSON.stringify(data.login));
+
+      console.log("Login Valid!")
+
+      // setFormState({
+      //   memberEmail: '',
+      //   password: '',
+      // });
+
+      navigate("/home")
+      window.scrollTo(0, 0);
+    }
+
   }
 
+  //* Password Reset Button Handle
   const passwordReset = async (event) => {
     
     event.preventDefault();
@@ -28,6 +66,7 @@ const LoginBox = () => {
     window.scrollTo(0, 0);
   };
 
+  //* New User Button Handle
   const newUserRegister = async (event) => {
     
     event.preventDefault();
