@@ -15,11 +15,11 @@ import { getTrainerList_Q } from '../utils/queries';
 function TrainerSchedule() {
 
   //!!!!!!!!!!!!!!!!!!!!!!! 💀💀💀💀 EXPOSED API Keys 💀💀💀💀 !!!!!!!!!!!!!!!!!!!!!!!
-  const calenderID = "46d0b7242503e7df5b2f2d2748186f4b71019055df1e0a378a44b143da92e93f@group.calendar.google.com"
   const API_KEY = "AIzaSyCbWMQa_jgNRxsSqARCVPy0nsmzrvFY-Mg";
   //!!!!!!!!!!!!!!!!!!!!!!! 💀💀💀💀 EXPOSED API Keys 💀💀💀💀 !!!!!!!!!!!!!!!!!!!!!!!
 
   const [selectedTrainer, setSelectedTrainer] = useState("Dave");
+  const [selectedTrainerCalLink, setSelectedTrainerCalLink] = useState("Dave");
   const forceUpdate = React.useCallback(() => updateState({}), []);
 
 
@@ -39,8 +39,10 @@ function TrainerSchedule() {
     // event.preventDefault();
 
     let currentTrainer = event.target.options[event.target.options.selectedIndex].value
+    let currentCalendarLink = event.target.options[event.target.options.selectedIndex].accessKey
 
     await setSelectedTrainer(currentTrainer);
+    await setSelectedTrainerCalLink(currentCalendarLink);
 
     // console.log("Test 1")
     // console.log(event.target.options.selectedIndex)
@@ -50,9 +52,19 @@ function TrainerSchedule() {
 
     // const trainerSelectForm = new FormData(event.target);
     // console.log(trainerSelectForm.get("trainerSelect"))
-    // event.forceUpdate();
+    // Calendar.forceUpdate();
+    // this.forceUpdate();
+    // let [value, setState] = useState(true);
+    // return () => setState(!value);
 
   }
+
+    function populateListOfTrainers(trainerData) {
+
+      //* Create List of shapers from data pull from Database
+      trainerListHTML.push(<option key={trainerData.calendarLink} accessKey={trainerData.calendarLink} value={trainerData.trainerFirstName}>{trainerData.trainerFirstName}</option>)
+
+    }
 
   if(loading) {
 
@@ -64,17 +76,30 @@ function TrainerSchedule() {
 
   if(!loading) {
 
+    var trainerListHTML = []
+
+    data.getTrainerList.forEach(populateListOfTrainers)
+
     console.log("========= Trainer List =========")
     // console.log(data)
+    console.log(trainerListHTML)
     console.log(data.getTrainerList[0].trainerFirstName)
     console.log(data.getTrainerList[1].trainerFirstName)
     console.log(data.getTrainerList[2].trainerFirstName)
 
-    if(selectedTrainer == "Dave")
-    {
+    // if(selectedTrainer == "Dave")
+    // {
+
+      console.log("Calendar Link = " + selectedTrainerCalLink)
+
       let calendars = [
-        { calendarId: "05ff7b93959c21d3f5c47015d76eb4900c3fd5742c441f1301741c708189ce1c@group.calendar.google.com" },
+        { calendarId: selectedTrainerCalLink },
       ];
+
+    let tempTrainer = selectedTrainer
+
+    // if(tempTrainer !== selectedTrainer) {
+    if(true) {
 
       return (
 
@@ -95,12 +120,8 @@ function TrainerSchedule() {
                 <div className="d-flex col-2 justify-content-left align-items-start">
                 
                   <form className="" onChange={currentTrainerSet}>
-                    <select name="trainerSelect" defaultValue="Dave" className="text-center trainerSelectDropdown" >
-                      <option value="Dave">Dave</option>
-                      <option value="Mike">Mike</option>
-                      <option value="Tammy">Tammy</option>
-                      {/* <option value="Zara">Zara</option> */}
-                      {/* <option value="Kyle">Kyle</option> */}
+                    <select name="trainerSelect" defaultValue={selectedTrainer} className="text-center trainerSelectDropdown" >
+                      {trainerListHTML}
                     </select>
                   </form>
 
@@ -109,7 +130,7 @@ function TrainerSchedule() {
                 <div name={selectedTrainer} className="d-flex justify-content-center align-items-center trainerCalenderBox my-5">
 
                   {/* <h2 className="text-center hiddenText"> {selectedTrainer}</h2> */}
-                  <Calendar apiKey={API_KEY} calendars={calendars} showFooter="false"/>
+                  <Calendar apiKey={API_KEY} calendars={calendars} trainerName={selectedTrainer} showFooter="false"/>
 
                 </div>
 
@@ -130,126 +151,120 @@ function TrainerSchedule() {
       )
     }
 
-    if(selectedTrainer == "Mike")
-    {
-      let calendars = [
-        { calendarId: "46d0b7242503e7df5b2f2d2748186f4b71019055df1e0a378a44b143da92e93f@group.calendar.google.com" },
-      ];
+    // if(selectedTrainer == "Mike")
+    // {
+    //   let calendars = [
+    //     // { calendarId: "46d0b7242503e7df5b2f2d2748186f4b71019055df1e0a378a44b143da92e93f@group.calendar.google.com" },
+    //     { calendarId: selectedTrainerCalLink },
+    //   ];
 
-      return (
+    //   return (
 
-        <div>
+    //     <div>
 
-          <Header />
+    //       <Header />
 
-          <div className="d-flex flex-row">
+    //       <div className="d-flex flex-row">
 
-            <SideBar />
+    //         <SideBar />
 
-            <div className="d-flex flex-column w-100 align-items-center">
+    //         <div className="d-flex flex-column w-100 align-items-center">
 
-              <h1 className="d-flex flex-row text-center align-items-center mt-4 welcomeText"> {selectedTrainer} Schedule</h1>
+    //           <h1 className="d-flex flex-row text-center align-items-center mt-4 welcomeText"> {selectedTrainer} Schedule</h1>
 
-              <div  className="d-flex flex-row w-100 justify-content-center">
+    //           <div  className="d-flex flex-row w-100 justify-content-center">
 
-                <div className="d-flex col-2 justify-content-left align-items-start">
+    //             <div className="d-flex col-2 justify-content-left align-items-start">
                 
-                  <form className="" onChange={currentTrainerSet}>
-                    <select name="trainerSelect" defaultValue="Dave" className="text-center trainerSelectDropdown" >
-                      <option value="Dave">Dave</option>
-                      <option value="Mike">Mike</option>
-                      <option value="Tammy">Tammy</option>
-                      {/* <option value="Zara">Zara</option> */}
-                      {/* <option value="Kyle">Kyle</option> */}
-                    </select>
-                  </form>
+    //               <form className="" onChange={currentTrainerSet}>
+    //                 <select name="trainerSelect" defaultValue={selectedTrainer} className="text-center trainerSelectDropdown" >
+    //                   {trainerListHTML}
+    //                 </select>
+    //               </form>
 
-                </div>
-                <h1 className="text-center hiddenText"> {selectedTrainer}</h1>
-                <div name={selectedTrainer} className="d-flex justify-content-center align-items-center trainerCalenderBox my-5">
+    //             </div>
+    //             <h1 className="text-center hiddenText"> {selectedTrainer}</h1>
+    //             <div name={selectedTrainer} className="d-flex justify-content-center align-items-center trainerCalenderBox my-5">
 
-                  {/* <h2 className="text-center hiddenText"> {selectedTrainer}</h2> */}
-                  <Calendar apiKey={API_KEY} calendars={calendars} showFooter="false"/>
+    //               {/* <h2 className="text-center hiddenText"> {selectedTrainer}</h2> */}
+    //               <Calendar apiKey={API_KEY} calendars={calendars} showFooter="false"/>
 
-                </div>
+    //             </div>
 
-                <div className="d-flex col-2">
+    //             <div className="d-flex col-2">
                 
-                  {/* <h1>Pick</h1> */}
+    //               {/* <h1>Pick</h1> */}
 
-                </div>
+    //             </div>
 
-              </div>
+    //           </div>
 
-            </div>
+    //         </div>
 
-          </div>
+    //       </div>
           
-        </div>
+    //     </div>
         
-      )
-    }
+    //   )
+    // }
 
-    if(selectedTrainer == "Tammy")
-    {
+    // if(selectedTrainer == "Tammy")
+    // {
 
-      let calendars = [
-        { calendarId: "30a9307a1a76678f400a925e5d9d6d3b28b302520db061f8d1ddbd2c0671af75@group.calendar.google.com" },
-      ];
+    //   let calendars = [
+    //     // { calendarId: "30a9307a1a76678f400a925e5d9d6d3b28b302520db061f8d1ddbd2c0671af75@group.calendar.google.com" },
+    //     { calendarId: selectedTrainerCalLink },
+    //   ];
 
-      return (
+    //   return (
 
-        <div>
+    //     <div>
 
-          <Header />
+    //       <Header />
 
-          <div className="d-flex flex-row">
+    //       <div className="d-flex flex-row">
 
-            <SideBar />
+    //         <SideBar />
 
-            <div className="d-flex flex-column w-100 align-items-center">
+    //         <div className="d-flex flex-column w-100 align-items-center">
 
-              <h1 className="d-flex flex-row text-center align-items-center mt-4 welcomeText"> {selectedTrainer} Schedule</h1>
+    //           <h1 className="d-flex flex-row text-center align-items-center mt-4 welcomeText"> {selectedTrainer} Schedule</h1>
 
-              <div  className="d-flex flex-row w-100 justify-content-center">
+    //           <div  className="d-flex flex-row w-100 justify-content-center">
 
-                <div className="d-flex col-2 justify-content-left align-items-start">
+    //             <div className="d-flex col-2 justify-content-left align-items-start">
                 
-                  <form className="" onChange={currentTrainerSet}>
-                    <select name="trainerSelect" defaultValue="Tammy" className="text-center trainerSelectDropdown" >
-                      <option value="Dave">Dave</option>
-                      <option value="Mike">Mike</option>
-                      <option value="Tammy">Tammy</option>
-                      {/* <option value="Zara">Zara</option> */}
-                      {/* <option value="Kyle">Kyle</option> */}
-                    </select>
-                  </form>
+    //               <form className="" onChange={currentTrainerSet}>
+    //                 <select name="trainerSelect" defaultValue={selectedTrainer} className="text-center trainerSelectDropdown" >
+    //                   {trainerListHTML}
+    //                 </select>
+    //               </form>
 
-                </div>
+    //             </div>
 
-                <div className="d-flex flex-column justify-content-center align-items-center trainerCalenderBox my-5">
+    //             <div className="d-flex flex-column justify-content-center align-items-center trainerCalenderBox my-5">
 
-                  <h1 className="text-center hiddenText"> {selectedTrainer}</h1>
-                  <Calendar apiKey={API_KEY} calendars={calendars}/>
+    //               <h1 className="text-center hiddenText"> {selectedTrainer}</h1>
+    //               <Calendar apiKey={API_KEY} calendars={calendars}/>
 
-                </div>
+    //             </div>
 
-                <div className="d-flex col-2">
+    //             <div className="d-flex col-2">
                 
-                  {/* <h1>Pick</h1> */}
+    //               {/* <h1>Pick</h1> */}
 
-                </div>
+    //             </div>
 
-              </div>
+    //           </div>
 
-            </div>
+    //         </div>
 
-          </div>
+    //       </div>
           
-        </div>
+    //     </div>
         
-      )
-    }
+    //   )
+    // }
   }
 
 }
