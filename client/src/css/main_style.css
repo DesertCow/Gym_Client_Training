@@ -217,3 +217,7 @@ body > #root > div {
 .hiddenText {
   display: none;
 }
+
+.loadingSpinner {
+  margin-top: 150px;
+}
