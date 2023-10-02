@@ -3,6 +3,8 @@
 
 //* Models for MongoDB 
 const UserMongo = require('../../models/UserMongo');
+const TrainerMongo = require('../../models/TrainerMongo');
+
 
 
 
@@ -10,11 +12,11 @@ const resolvers = {
 
   Query: {
 
-    testQuery: async () => {
+    getTrainerList: async () => {
 
-      console.log("Test Query")
+      const trainerList = await TrainerMongo.find()
 
-      return "Test Query"
+      return trainerList;
 
     },
 
@@ -85,11 +87,20 @@ const resolvers = {
 
       }
 
-
     },
 
-  },
+    createTrainer: async (parent, { trainerEmail, password, calendarLink,trainerFirstName, trainerLastName }) => {
 
+      let registerDate = new Date();
+
+      //* Request Database create a new "User"
+
+      const trainer = await TrainerMongo.create({ trainerEmail, password, calendarLink, trainerFirstName, trainerLastName, registerDate });
+
+      return trainer;
+
+    },
+  }
 };
 
 module.exports = resolvers;
