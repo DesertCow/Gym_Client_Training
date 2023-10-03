@@ -27,11 +27,30 @@ const Header = () => {
 
       {/* <h1 className="text-center">Header!</h1> */}
 
-      <div className="text-center">
-        <img src={require("../../img/Logo_Veganliftz_White.png")}
+      <div className="text-center d-flex col justify-content-center ml-5">
+        {/* <img src={require("../../img/Alpine_Athletics_Training_TEXT_White.png")} */}
+        {/* <img src={require("../../img/Alpine_Athletics_Training_LOGO_White.png")}
+          className="col headerLogo my-3"
+          onClick={() => HeaderLogoClicked(event)}
+          alt="Alpine Athletics Training Logo White" />
+        <h1 className="col header_text text-center mt-3">Alpine Athletics Training</h1> */}
+        {/* <img src={require("../../img/Alpine_Athletics_Training_TEXT_White.png")}
           className="headerLogo my-3"
           onClick={() => HeaderLogoClicked(event)}
-          alt="Vegan Liftz Logo White" />
+          alt="Alpine Athletics Training Logo White" /> */}
+        {/* <img src={require("../../img/Alpine_Athletics_Training_LOGO_White.png")}
+          className="col headerLogo my-3"
+          onClick={() => HeaderLogoClicked(event)}
+          alt="Alpine Athletics Training Logo White" /> */}
+        <img src={require("../../img/Alpine_Athletics_Training_LOGO_White.png")}
+          className="headerLogo my-3"
+          onClick={() => HeaderLogoClicked(event)}
+          alt="Alpine Athletics Training Logo White" />
+        <h1 className="col header_text text-center mt-3">Alpine Athletics Training</h1>
+        <img src={require("../../img/Alpine_Athletics_Training_LOGO_White.png")}
+          className="headerLogo my-3"
+          onClick={() => HeaderLogoClicked(event)}
+          alt="Alpine Athletics Training Logo White" />
       </div>
 
 

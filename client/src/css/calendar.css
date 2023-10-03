@@ -7,10 +7,10 @@
 }
 
 .rbc-day-bg{
-  /* background-color: var(--main-color-green); */
+  /* background-color: var(--main-color-blue); */
   background-color: rgb(211, 211, 211);
 }
 
 .rbc-off-range-bg {
-  background: var(--main-color-light_green);
+  background: var(--main-color-light);
 }

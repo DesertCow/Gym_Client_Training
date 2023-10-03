@@ -44,10 +44,13 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 :root {
   --main-font-bold: "LEMONMILK-Bold";
   --main-font-regular: "LEMONMILK-Regular";
-  /* --mainBG-color: #181818; */
-  --main-color-green: #0ca750;
-  --main-color-light_green: #38F188;
-  --main-color-dark_green: #033117;
+  /*  */
+  --main-color-blue: #0B3E68;
+  --main-color-light: #4DA5EC;
+  --main-color-dark: #033117;
+  /*  */
+  --main-color-button: #123F63;
+  --main-color-button_hover: #051B2D;
   /* --alt-color1: #0ba6d99a; */
   /* --alt-color2: #d34846bb; */
   /* --alt-color2b: #ed5735be; */
@@ -98,7 +101,7 @@ body > #root > div {
 
 .loginPage {
   min-height: 100vh;
-  background-color: #0ca750;
+  background-color: var(--main-color-blue);
 }
 
 
@@ -135,7 +138,7 @@ body > #root > div {
   font-size: 18px;
   width: 250px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.902);
+  background-color: var(--main-color-button);
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -160,7 +163,7 @@ body > #root > div {
 /*? ============= Billing CSS ============= */
 
 .creditCardBox {
-  background-color: var(--main-color-light_green);
+  background-color: var(--main-color-light);
   padding: 25px 25px 25px 25px;
   border-color: rgb(210, 210, 210);
   border-width: 10px;

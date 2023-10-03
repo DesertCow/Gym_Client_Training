@@ -78,8 +78,8 @@ const LoginBox = () => {
 
    <div className="row d-flex w-100 loginTopBox">
 
-        <div className="col-12 mt-3 mb-5 text-center">
-          <img src={require("../../img/Solo_Logo+White.png")}
+        <div className="col-12 mt-4 mb-5 text-center">
+          <img src={require("../../img/Alpine_Athletics_Training_LOGO.png")}
             className="loginLogo"
             alt="VeganLiftz Logo" />
         </div>
