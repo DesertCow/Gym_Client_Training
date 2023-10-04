@@ -1,7 +1,7 @@
 <div align="center">
 <h1>Alpine Athletics Training App</h1>
  <p align="center">
-  <img src="./Dev_Docs/Icon_Design/Alpine_Athletics_Training_Logo+Text.png" height="200" alt="Vegan Liftz Logo Green")
+  <img src="./Dev_Docs/Icon_Design/Alpine_Athletics_Training_Logo+Text.png" height="200" alt="Alpine Athletics Logo")
 </p>
 
 <br>
