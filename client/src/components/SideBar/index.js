@@ -16,11 +16,18 @@ const SideBar = () => {
 
   }
 
+  let sidebarHeight = window.innerHeight - 132
+  sidebarHeight = sidebarHeight + "px"
+
+  // console.log("Outer:"+ window.outerHeight)
+  // console.log("Inner:"+ window.innerHeight)
+  // console.log("Height:"+ window.screen.availHeight)
+
   return (
 
     // <h1 className="text-center mt-5">Side Bar</h1>
 
-    <div className="d-flex flex-column sideBarMain">
+    <div className="d-flex flex-column sideBarMain" style={{height: sidebarHeight}}>
 
       <div className="d-flex flex-column text-center">
 

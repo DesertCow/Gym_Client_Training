@@ -56,6 +56,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .loginbtns {
 	background-color: var(--main-color-button);
+        color: white;
         font-size: 15px;
         font-family: "LEMONMILK-Regular";
 	font-weight: 400;
@@ -84,15 +85,12 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .headerLogo {
         height: 100px;
-        /* width: 150px; */
-        /* max-width: 150px; */
-        margin-left: 10%;
 }
 
 .header_text {
         font-family: var(--main-font-bold);
-        font-size: 30px;
-        margin-left: 10%;
+        font-size: 50px;
+        color: white;
 }
 
 
@@ -110,7 +108,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
         background-color: var(--main-color-blue);
         
         /*! WORKAROUND FIX to 100%  */
-        min-height: 84.8vh;
+        /* min-height: 84.8vh; */
         /*! ======================  */
 }
 
