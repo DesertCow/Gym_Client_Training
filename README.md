@@ -1,13 +1,13 @@
 <div align="center">
-<h1>Vegan Liftz Training App</h1>
+<h1>Alpine Athletics Training App</h1>
  <p align="center">
-  <img src="./Dev_Docs/Art/Logo_Veganliftz_Green.png" width="350" height="80" alt="Vegan Liftz Logo Green")
+  <img src="./Dev_Docs/Icon_Design/Alpine_Athletics_Training_Logo+Text.png" height="200" alt="Alpine Athletics Logo")
 </p>
 
 <br>
 <br>
 
-<h4>Progressive Web Application that enables a simple and intuitive interface for clients to get their daily workout and diet plans from their personal trainers.</h4>
+<h4>Progressive Web Application that enables a simple and intuitive interface for clients to get their daily workout and diet plans from their personal alpine trainers.</h4>
 </div>
 
 <br>
@@ -64,67 +64,37 @@ TBD...
 
 * **Databases**
   * MongoDB (non-relational)
-    * 
-    * 
-    * 
-    * 
-    * 
+    * events
+    * users
+    * trainers
 
 <br>
 
-* **Server** (Node 18.6.0)
+* **Server** (Bun 1.0.3)
   * NPM Packages
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
+    * @apollo/server (4.9.3)
+    * cors (2.8.5)
+    * express (4.18.2)
+    * figlet (1.6.0)
+    * graphql (16.8.1)
+    * mongoose (7.5.3)
 
 <br>
 
 * **Client** (React 18.2.0)
   * NPM Packages
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
-    *
+    * @apollo/client (3.8.4)
+    * @emotion/react (11.11.1)
+    * @ericz1803/react-google-calendar (4.3.1)
+    * bootstrap (5.3.2)
+    * moment (2.29.4)
+    * react (18.2.0)
+    * react-big-calendar (1.8.4)
+    * react-bootstrap (2.8.0)
+    * react-dom (18.2.0)
+    * react-loader-spinner (5.4.5)
+    * react-router-dom (6.16.0)
+    * react-scripts (5.0.1)
 
 <br>
 

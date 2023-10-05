@@ -55,7 +55,8 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .loginbtns {
-	background-color: #7AF6B0;
+	background-color: var(--main-color-button);
+        color: white;
         font-size: 15px;
         font-family: "LEMONMILK-Regular";
 	font-weight: 400;
@@ -70,7 +71,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .loginbtns:hover {
-        background-color: #033117;
+        background-color: var(--main-color-button_hover);
         color: rgb(255, 255, 255);
 }
 
@@ -79,13 +80,18 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 /*? ============= Header ============= */
 
 .main_header{
-        background-color: var(--main-color-green);
+        background-color: var(--main-color-blue);
 }
 
 .headerLogo {
-        margin-left: 10%;
+        height: 100px;
 }
 
+.header_text {
+        font-family: var(--main-font-bold);
+        font-size: 50px;
+        color: white;
+}
 
 
 
@@ -99,21 +105,22 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 
 .sideBarMain {
         max-width: var(--sidebar-width);
-        background-color: var(--main-color-green);
+        background-color: var(--main-color-blue);
         
         /*! WORKAROUND FIX to 100%  */
-        min-height: 84.8vh;
+        /* min-height: 84.8vh; */
         /*! ======================  */
 }
 
 .sideBarLink {
         font-family: var(--main-font-bold);
+        color: white;
         font-size: 30px;
         
 }
 
 .sideBarLink:hover {
-        background-color: var(--main-color-dark_green);
+        background-color: var(--main-color-button_hover);
         color: rgb(255, 255, 255);
         /*padding: 0px 50px 0px 50px;*/
         border-radius: 15px;
@@ -140,7 +147,7 @@ ________/\\\\\\\\\_____/\\\\\\\\\\\_______/\\\\\\\\\\\___
 }
 
 .sidebar_footer_logo_padded:hover {
-        background-color: var(--main-color-dark_green);
+        background-color: var(--main-color-button_hover);
         color: rgb(255, 255, 255);
         /* padding: 15px; */
         /*padding: 0px 50px 0px 50px;*/

@@ -68,7 +68,7 @@ function UserSettings() {
         {/* <h1 className="editProfileText text-center mt-5">{jwtToken.data.memberFirstName} {jwtToken.data.memberLastName}</h1> */}
         <div className="w-100">
           <h1 className="editProfileUserName text-center mt-5">Clayton Skaggs</h1>
-          <h3 className="editProfileText text-center"> Welcome to your Vegan Liftz Profile</h3>
+          <h3 className="editProfileText text-center"> Welcome to your Alpine Athletics Profile</h3>
           
           <div className="mx-2 text-center">
             <div className="my-3">
