@@ -42,14 +42,14 @@ const SideBar = () => {
         <div className="d-flex flex-row mb-2 justify-content-around sidebarBottomIcons">
 
           <div className="p-2 sidebar_footer_logo_padded">
-             <img src={require("../../img/icons/logout_icon.png")}
+             <img src={require("../../img/icons/logout_icon_white.png")}
               className=" sidebar_footer_logo_logout sidebar_footer_logo"
               onClick={() => logOutConfirm(event)}
-              alt="Settings Icon" />
+              alt="Logout Icon" />
           </div>
 
           <div className="p-2 sidebar_footer_logo_padded">
-            <img src={require("../../img/icons/settings_icon.png")}
+            <img src={require("../../img/icons/settings_icon_white.png")}
               className="sidebar_footer_logo_settings sidebar_footer_logo"
               onClick={() => navigate("/userSettings")}
               alt="Settings Icon" />

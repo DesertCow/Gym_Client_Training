@@ -116,14 +116,18 @@ body > #root > div {
   -o-border-radius: 15px;
 }
 
+.userProfileMainBox {
+  max-width: 95%;
+}
+
 .editProfileText{
   font-family: var(--main-font-regular);
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .editProfileUserName{
   font-family: var(--main-font-bold);
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .uploadBox {

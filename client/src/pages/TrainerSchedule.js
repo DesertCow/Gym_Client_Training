@@ -69,7 +69,7 @@ function TrainerSchedule() {
                   height={550}
                   width={550}
                   radius={5}
-                  color="#4fa94d"
+                  color="#0B3E68"
                   ariaLabel="ball-triangle-loading"
                   wrapperClass={{}}
                   wrapperStyle=""
